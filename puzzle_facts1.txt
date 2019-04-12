@@ -1,0 +1,42 @@
+(T1 T)
+
+(T2 T)
+
+(T3 T)
+
+(T4 T)
+
+(T5 T)
+
+(T6 T)
+
+(T7 T)
+
+(Pos1 Pos)
+
+(Pos2 Pos)
+
+(Pos3 Pos)
+
+(Pos4 Pos)
+
+(Pos5 Pos)
+
+(Pos6 Pos)
+
+(Pos7 Pos)
+
+(Pos8 Pos)
+
+(Pos9 Pos)
+
+
+(preconds
+ (sideBySide Pos1 Pos2) (sideBySide Pos1 Pos4) (sideBySide Pos2 Pos1) (sideBySide Pos2 Pos3) (sideBySide Pos2 Pos5) (sideBySide Pos3 Pos2) (sideBySide Pos3 Pos6)
+ (sideBySide Pos4 Pos1) (sideBySide Pos4 Pos5) (sideBySide Pos4 Pos7) (sideBySide Pos5 Pos2) (sideBySide Pos5 Pos4) (sideBySide Pos5 Pos6) (sideBySide Pos5 Pos8) (sideBySide Pos6 Pos3) (sideBySide Pos6 Pos5) (sideBySide Pos6 Pos9)
+ (sideBySide Pos7 Pos4) (sideBySide Pos7 Pos8) (sideBySide Pos8 Pos5) (sideBySide Pos8 Pos7) (sideBySide Pos8 Pos9) (sideBySide Pos9 Pos6) (sideBySide Pos9 Pos8)
+ (on T1 Pos1) (on T2 Pos2) (on T3 Pos3) (on T4 Pos7) (on T5 Pos5) (on T6 Pos6) (on T7 Pos9) (clear Pos4) (clear Pos8) )
+
+(effects
+  (on T1 Pos1) (on T2 Pos2) (on T3 Pos3) (on T4 Pos4) (on T5 Pos5) (on T6 Pos6) (on T7 Pos7) (clear Pos8) (clear Pos9) 
+ )

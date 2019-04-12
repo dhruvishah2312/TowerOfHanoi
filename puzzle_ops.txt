@@ -1,0 +1,13 @@
+(operator
+ relocate(params
+  (<t1> T) (<p1> Pos) (<p2> Pos) )
+
+
+(preconds
+  (on <t1> <p1>) (clear <p2>) (sideBySide <p1> <p2>))
+ 
+
+
+(effects
+  (on <t1> <p2>) (clear <p1>) (del on <t1> <p1>) (del clear <p2>) ))
+

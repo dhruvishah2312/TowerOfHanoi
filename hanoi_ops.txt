@@ -1,0 +1,40 @@
+(operator
+ fromPtoD(params
+  (<d1> D) (<p1> P) (<d2> D) )
+ (preconds
+  (on <d1> <p1>) (clear <d1>) (clear <d2>) (bigger <d2> <d1>))
+ (effects
+  (on <d1> <d2>) (clear <p1>) (del on <d1> <p1>) (del clear <d2>) ))
+
+
+
+
+(operator
+ fromPtoP(params
+  (<d1> D) (<p1> P) (<p2> P))
+ (preconds
+  (clear <d1>) (on <d1> <p1>) (clear <p2>))
+ (effects
+  (on <d1> <p2>) (clear <p1>) (del on <d1> <p1>) (del clear <p2>) ))
+
+
+
+
+(operator
+ fromDtoD(params
+  (<d1> D) (<d2> D) (<d3> D))
+ (preconds
+  (on <d1> <d2>) (clear <d1>) (clear <d3>) (bigger <d3> <d1>))
+ (effects
+  (on <d1> <d3>) (clear <d2>) (del on <d1> <d2>) (del clear <d3>) ))
+
+
+
+
+(operator
+ fromDtoP(params
+  (<d1> D) (<d2> D) (<p1> P))
+ (preconds
+  (on <d1> <d2>) (clear <d1>) (clear <p1>))
+ (effects
+  (on <d1> <p1>) (clear <d2>) (del on <d1> <d2>) (del clear <p1>) ))

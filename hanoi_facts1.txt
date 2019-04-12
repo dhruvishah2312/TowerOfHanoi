@@ -1,0 +1,41 @@
+(disk1 D)
+
+(disk2 D)
+
+(disk3 D)
+
+(disk4 D)
+
+(disk5 D)
+
+(A P)
+
+(B P)
+
+(C P)
+
+
+
+(preconds
+  
+(bigger disk2 disk1) 
+(bigger disk3 disk1) 
+(bigger disk4 disk1) 
+(bigger disk5 disk1) 
+(bigger disk3 disk2) 
+(bigger disk4 disk2) 
+(bigger disk5 disk2) 
+(bigger disk4 disk3) 
+(bigger disk5 disk3) 
+(bigger disk5 disk4)
+  
+(on disk1 disk2) 
+(on disk2 A) 
+(clear disk1) 
+(clear B) 
+(clear C))
+
+
+
+(effects
+ (on disk1 B) )
